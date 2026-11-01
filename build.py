@@ -1,4 +1,4 @@
-"""Builds israel.m3u and israel-guide.xml from iptv-org + epgshare01.
+"""Builds anytv.m3u and anytv-guide.xml from iptv-org + epgshare01.
 
 Run with no arguments to download fresh sources, or pass local files:
     python build.py [playlist.m3u] [guide.xml.gz|guide.xml]
@@ -13,9 +13,19 @@ GUIDE_URL = "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz"
 EXCLUDE_GROUPS = {"Religious"}
 EXCLUDE_IDS = {"RTGint.ru", "HalaTV.il", "i24NEWSFrench.il", "i24NEWSArabic.il"}
 
+# Every channel goes into this one group (replaces iptv-org's groups).
+GROUP = "Israel"
+
 # Optional channel order (by tvg-id). Listed channels come first in this order;
 # anything not listed follows in the original iptv-org order.
-ORDER = []
+ORDER = [
+    "Kan11.il", "Keshet12.il", "Channel13.il", "KanEducational.il", "Channel24.il",
+    "ComedyChannel.il", "i24NEWSHebrew.il", "Makan33.il", "Now14.il", "Channel16.il",
+    "Channel9.il", "GoodLife.il", "VacationChannel.il", "HealthChannel.il",
+    "YesMoviesAction.il", "HOTDrama.il", "HOTZone.il", "RealityChannel.il", "5Plus.il",
+    "5Stars.il", "TeenNick.il", "Zoom.il", "Hop.il", "VivaPremium.il", "YamTichoni.il",
+    "KnessetChannel.il",
+]
 
 # iptv-org tvg-id -> epgshare01 guide id
 EPG_MAP = {
@@ -71,9 +81,8 @@ def main():
     out = ["#EXTM3U"]
     for c in chans:
         line = re.sub(r'\s*group-title="[^"]*"', "", c["extinf"])
-        line = re.sub(r'tvg-id="[^"]*"', f'tvg-id="{c["id"]}"', line)
+        line = re.sub(r'tvg-id="[^"]*"', f'tvg-id="{c["id"]}" group-title="{GROUP}"', line)
         out += [line, *c["extra"], c["url"]]
-    open("israel.m3u", "w", encoding="utf-8").write("\n".join(out) + "\n")
 
     keep = {EPG_MAP[c["id"]]: c["id"] for c in chans if c["id"] in EPG_MAP}
     root = ET.fromstring(read_source(args[1], GUIDE_URL))
@@ -86,11 +95,13 @@ def main():
     for p in root.findall("programme"):
         if p.get("channel") in keep:
             p.set("channel", keep[p.get("channel")]); new.append(p); n += 1
-    ET.indent(new)
-    ET.ElementTree(new).write("israel-guide.xml", encoding="utf-8", xml_declaration=True)
     print(f"{len(chans)} channels, {len(seen)} with guide, {n} programmes")
     if len(chans) < 5 or n < 100:
         sys.exit("Sanity check failed: sources look broken, not overwriting a good build.")
+
+    open("anytv.m3u", "w", encoding="utf-8").write("\n".join(out) + "\n")
+    ET.indent(new)
+    ET.ElementTree(new).write("anytv-guide.xml", encoding="utf-8", xml_declaration=True)
 
 
 if __name__ == "__main__":
