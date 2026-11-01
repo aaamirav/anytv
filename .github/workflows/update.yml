@@ -1,0 +1,25 @@
+name: Update playlist and guide
+on:
+  schedule:
+    - cron: "17 3 * * *"   # every day at 03:17 UTC
+  workflow_dispatch:        # lets you run it by hand from the Actions tab
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python build.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add israel.m3u israel-guide.xml
+          if ! git diff --cached --quiet; then
+            git commit -m "Daily update"
+            git push
+          fi
