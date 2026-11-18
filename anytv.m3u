@@ -60,5 +60,13 @@ http://stream.mcquack.net/46/index.m3u8
 #EXTINF:-1 tvg-id="KnessetChannel.il" group-title="Israel" tvg-logo="https://i.imgur.com/QXB1jv8.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",Knesset Channel (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/48/index.m3u8
+#EXTINF:-1 tvg-id="5Gold.il" group-title="Israel" tvg-logo="https://i.imgur.com/zFLRfXh.png",5Gold
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_gold/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="5Live.il" group-title="Israel" tvg-logo="https://i.imgur.com/0yr3yvd.png",5Live
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_live/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="5Sport4K.il" group-title="Israel" tvg-logo="https://i.imgur.com/Msfhpqd.png",5Sport 4K
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_4k_avc/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="5Sport.il" group-title="Israel" tvg-logo="https://i.imgur.com/dRVsB89.png",5Sport
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="TheIsraeliNetwork.il" group-title="Israel" tvg-logo="https://i.imgur.com/wOsArb9.png",The Israeli Network (540p)
 https://r.eu.cdn-redge.media/livehls/oeu/mt/live/the_israeli_network/live.livx/playlist.m3u8
