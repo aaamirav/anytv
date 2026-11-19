@@ -29,8 +29,6 @@ https://contact.gostreaming.tv/Con-11/index.m3u8
 http://stream.mcquack.net/47/index.m3u8
 #EXTINF:-1 tvg-id="VacationChannel.il" group-title="Israel" tvg-logo="https://static.g-cdn.app/streams/vacation-channel-il-hd.png",Vacation Channel
 https://d1yd8hohnldm33.cloudfront.net/out/v1/19dee23c2cc24f689bd4e1288661ee0c/index_2.m3u8
-#EXTINF:-1 tvg-id="HealthChannel.il" group-title="Israel" tvg-logo="https://cdn.epg.one/img2/2709.png",Health Channel (1080p)
-http://89.33.29.115:8080/Health/index.m3u8
 #EXTINF:-1 tvg-id="YesMoviesAction.il" group-title="Israel" tvg-logo="https://i.imgur.com/Bgz7p5F.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",Yes Movies Action (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://stream.mcquack.net/380/index.m3u8
@@ -42,12 +40,10 @@ http://stream.mcquack.net/381/index.m3u8
 http://stream.mcquack.net/379/index.m3u8
 #EXTINF:-1 tvg-id="RealityChannel.il" group-title="Israel" tvg-logo="https://static.g-cdn.app/streams/yes-reality-channel-il-hd.png",Reality Channel
 https://d2dffl3588mvfk.cloudfront.net/out/v1/d8e15050ca4148aab0ee387a5e2eb46b/index_1.m3u8
-#EXTINF:-1 tvg-id="5Plus.il" group-title="Israel" tvg-logo="https://i.imgur.com/L3RA9Lv.png",5Plus (1080p)
-http://89.33.29.115:8080/sportplus/index.m3u8
-#EXTINF:-1 tvg-id="5Stars.il" group-title="Israel" tvg-logo="https://i.imgur.com/IQtAKIa.png",5Stars (1080p)
-http://89.33.29.115:8080/IL_5Stars/index.m3u8
-#EXTINF:-1 tvg-id="TeenNick.il" group-title="Israel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/TeenNick_2019_logo.svg/960px-TeenNick_2019_logo.svg.png",TeenNick (Israel) (406p)
-http://89.33.29.115:8080/TeenNick/index.m3u8
+#EXTINF:-1 tvg-id="5Plus.il" group-title="Israel" tvg-logo="https://i.imgur.com/L3RA9Lv.png",5Plus
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_plus/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="5Stars.il" group-title="Israel" tvg-logo="https://i.imgur.com/IQtAKIa.png",5Stars
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_starz/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="Zoom.il" group-title="Israel" tvg-logo="https://i.imgur.com/KnBzNtA.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",Zoom (Israel) (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/377/index.m3u8
@@ -64,9 +60,31 @@ http://stream.mcquack.net/48/index.m3u8
 https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_gold/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="5Live.il" group-title="Israel" tvg-logo="https://i.imgur.com/0yr3yvd.png",5Live
 https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_live/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="5Max.il" group-title="Israel" tvg-logo="https://i.postimg.cc/XNmh01pH/5sport-max-il.png",5Max
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_max/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="5Sport4K.il" group-title="Israel" tvg-logo="https://i.imgur.com/Msfhpqd.png",5Sport 4K
 https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_4k_avc/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="5Sport.il" group-title="Israel" tvg-logo="https://i.imgur.com/dRVsB89.png",5Sport
 https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="ArutzHaYeladim.il" group-title="Israel" tvg-logo="https://i.imgur.com/n1KusFW.png",Arutz HaYeladim
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/kids_channel/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="EconomyChannel.il" group-title="Israel" tvg-logo="https://tv10.co.il/wp-content/uploads/2024/01/logotv10-1.png",Economy Channel
+https://r.il.cdn-redge.media/livehls/oil/calcala-live/live/channel10/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="Foody.il" group-title="Israel" tvg-logo="https://images.open-epg.com/18748363.png",Foody
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/foody/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="Junior.il" group-title="Israel" tvg-logo="https://i.imgur.com/w8fYTnw.png",Junior
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/junior/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="MusicIL.il" group-title="Israel" tvg-logo="https://i.imgur.com/tTVOc31.png",Music IL
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/music_il/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="One2.il" group-title="Israel" tvg-logo="https://i.imgur.com/JQLhYEs.png",One 2
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/one_2/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="OneDoco.il" group-title="Israel" tvg-logo="https://images.open-epg.com/18748370.png",One Doco
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/one_doco/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="OneEdge.il" group-title="Israel" tvg-logo="https://images.open-epg.com/x1761.png",One Edge
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/one_edge/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="TheIsraeliNetwork.il" group-title="Israel" tvg-logo="https://i.imgur.com/wOsArb9.png",The Israeli Network (540p)
 https://r.eu.cdn-redge.media/livehls/oeu/mt/live/the_israeli_network/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="VivaIstanbul.il" group-title="Israel" tvg-logo="https://cdn.epg.one/img2/88006.png",Viva Istanbul
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/viva_plus/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="VivaTelenovelas.il" group-title="Israel" tvg-logo="https://static.g-cdn.app/streams/viva-il.png",Viva Telenovelas
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/viva/live.livx/playlist.m3u8
