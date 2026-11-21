@@ -78,6 +78,8 @@ https://r.il.cdn-redge.media/livehls/oil/freetv/live/junior/live.livx/playlist.m
 https://r.il.cdn-redge.media/livehls/oil/freetv/live/music_il/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="One2.il" group-title="Israel" tvg-logo="https://i.imgur.com/JQLhYEs.png",One 2
 https://r.il.cdn-redge.media/livehls/oil/freetv/live/one_2/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="One.il" group-title="Israel" tvg-logo="https://i.imgur.com/hYrP2P0.png",One (Israel)
+https://r.il.cdn-redge.media/livehls/oil/freetv/live/one_1/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="OneDoco.il" group-title="Israel" tvg-logo="https://images.open-epg.com/18748370.png",One Doco
 https://r.il.cdn-redge.media/livehls/oil/freetv/live/one_doco/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="OneEdge.il" group-title="Israel" tvg-logo="https://images.open-epg.com/x1761.png",One Edge
